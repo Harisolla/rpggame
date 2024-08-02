@@ -1,0 +1,88 @@
+body {
+    background-color:blue;
+    box-sizing: border-box;
+  }
+  .heading{
+    text-align: center;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-display:block;
+    color:blanchedalmond;
+    
+  }
+ i{
+    color: black;
+ }
+ i:hover{
+    color:beige;
+    transition: all 0.6s ease-out;
+ }
+ 
+ .heading{
+    font-size:25px;
+    animation: slideIn 2s ease-in-out backwards;
+ }
+
+    @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateX(-75px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+
+
+  
+  #text {
+    background-color: black;
+    color: white;
+    padding: 10px;
+  }
+  
+  #game {
+    max-width: 700px;
+    max-height: 500px;
+    background-color: lightgray;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    /* box-shadow: 10px 10px black; */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+  transition: 0.3s;
+  }
+  #game:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,1);
+  }
+  #controls {
+    border: 1px black solid;
+    padding: 5px;
+  }
+  
+  #stats {
+    border: 1px black solid;
+    color: black;
+    padding: 5px;
+  }
+  
+  #monsterStats {
+    display: none;
+    border: 1px black solid;
+    color: white;
+    padding: 5px;
+    background-color: red;
+  }
+  
+  .stat {
+    padding-right: 10px;
+  }
+  button:hover{
+    background-color: darkred;
+    color:whitesmoke;
+    transition: all 0.2s ease-in-out;
+
+  }
